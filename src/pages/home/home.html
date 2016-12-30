@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ul>
+    <li class="text" *ngFor="let item of items | async">
+         {{ item | json }}
+    </li>
+  </ul>
+</ion-content>
